@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style type="text/css">
+    .owl-item.active-big .item img {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+        items: 2,
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          }
+        }
+      });
+
+      $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        var current = event.item.index;
+        var owlItems = $('.owl-item');
+        owlItems.removeClass('active-big');
+        owlItems.eq(current).addClass('active-big');
+      });
+
+      $('.owl-prev').on('click', function() {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+      });
+
+      $('.owl-next').on('click', function() {
+        $('.owl-carousel').trigger('next.owl.carousel');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="owl-carousel">
+          <div class="item">
+            <img src="img/YINSA_WEB_PRODUCTOS_Adhesivos.png" alt="Imagen 1">
+          </div>
+          <div class="item">
+            <img src="img/YINSA_WEB_PRODUCTOS_Basecoat.png" alt="Imagen 2">
+          </div>
+          <div class="item">
+            <img src="img/YINSA_WEB_PRODUCTOS_Estucos.png" alt="Imagen 3">
+          </div>
+        </div>
+        <div class="owl-controls">
+          <button class="owl-prev">&#8249;</button>
+          <button class="owl-next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+

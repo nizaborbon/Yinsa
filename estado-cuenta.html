@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+		<title>YINSA</title>
+
+		<!-- CSS -->
+		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+		<link href="css/icofont/icofont.min.css" rel="stylesheet">
+		<link href="css/datepicker/datepicker.css" rel="stylesheet">
+		<link href="css/fuentes.css" rel="stylesheet">
+		<link href="css/default.css" rel="stylesheet">
+	</head>
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="container d-flex align-items-center">
+			
+			<div class="row">
+      			<div class="col-lg-5 col-md-5">
+      				<a href="home.html" class="logo mr-auto">
+      					<img id="img-n" src="img/YINSA_WEB_Logo.png" alt="">
+      				</a>
+      			</div>
+      			<div class="col-lg-7 col-md-7">
+      				<button type="button" id="sidebarCollapse" class="btn btn-sidebar">
+              			<i class="fa fa-bars"></i>
+              			<span class="sr-only">Toggle Menu</span>
+            		</button>
+      			</div>
+      		</div>
+
+	        <nav class="nav-menu d-none d-lg-block ocultar">
+        		<ul id="ul-nav">
+          			<li><a href="#nosotros">Nosotros</a></li>
+          			<li><a href="#productos">Productos</a></li>
+          			<li><a href="#hazlo-tu-mismo">Házlo tu mismo</a></li>
+          			<li><a href="#expertos">Qué dicen los expertos</a></li>
+          			<li><a href="#contacto">Contacto</a></li>
+          			<li><a href="#cotizar">Cotizar</a></li>
+          			<div class="dropdown show">
+  						<a id="btn-toggle" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCESO</a>
+
+  						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    						<a class="dropdown-item" href="#">Acceso Cliente</a>
+    						<a class="dropdown-item" href="#">Acceso Proveedor</a>
+    						<a class="dropdown-item" href="#">Acceso Colaborador</a>
+  						</div>
+					</div>
+        		</ul>
+      		</nav>
+		</div>
+	</header>
+
+	<!-- Encabezado -->
+	<section id="encabezado">
+		<div class="container content">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-12">
+					<h1>NOMBRE CLIENTE</h1>
+					<h2>Estado de cuenta</h2>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-12"></div>
+						<div class="col-lg-6 col-md-6 col-12">
+							<a href="" class="btn btn-default">CERRAR SESIÓN</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-12 pt-4">
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="main" class="wrapper">
+		
+		<!-- sidebar -->
+		<nav id="sidebar" class="active">
+			<div id="div-sidebar" class="p-4">
+				<ul class="list-unstyled components mb-5">
+					<li><a href="#nosotros">Nosotros</a></li>
+          			<li><a href="#productos">Productos</a></li>
+          			<li><a href="#hazlo-tu-mismo">Házlo tu mismo</a></li>
+          			<li><a href="#expertos">Qué dicen los expertos</a></li>
+          			<li><a href="#contacto">Contacto</a></li>
+          			<li><a href="#cotizar">Cotizar</a></li>
+          			<div class="dropdown show">
+  						<a id="btn-toggle" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ACCESO</a>
+
+  						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    						<a class="dropdown-item" href="#">Acceso Cliente</a>
+    						<a class="dropdown-item" href="#">Acceso Proveedor</a>
+    						<a class="dropdown-item" href="#">Acceso Colaborador</a>
+  						</div>
+					</div>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="filtros">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+      					<div class="input-group mb-2">
+        					<div class="input-group-prepend">
+          						<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+        					</div>
+        				<input class="form-control datepicker">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="tabla">
+			<div class="container mb-5">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="text-right">
+							<button class="btn btn-y"><i class="fa fa-download"></i> Descargar</button>
+						</div>
+						<div id="tabla" class="pt-4">
+							<table class="table table-striped table-responsive">
+								<thead>
+									<tr class="table-title">
+										<th colspan="8">ESTADO DE CUENTA</th>
+									</tr>
+								    <tr>
+								      <th scope="col">Fecha</th>
+								      <th scope="col">Folio</th>
+								      <th scope="col">Concepto</th>
+								      <th scope="col">Cargo</th>
+								      <th scope="col">Abono</th>
+								      <th scope="col">Saldo de la cuenta</th>
+								    </tr>
+								</thead>
+								<tbody>
+								    <tr>
+								      <th scope="row">28 Abril 2018</th>
+								      <td>1</td>
+								      <td>consectetur adipiscing elit</td>
+								      <td>$0</td>
+								      <td>$11,000</td>
+								      <td>$11,00</td>
+								    </tr>
+								    <tr>
+								      <th scope="row">28 Abril 2018</th>
+								      <td>1</td>
+								      <td>consectetur adipiscing elit</td>
+								      <td>$0</td>
+								      <td>$11,000</td>
+								      <td>$11,00</td>
+								    </tr>
+								    <tr>
+								      <th scope="row">28 Abril 2018</th>
+								      <td>1</td>
+								      <td>consectetur adipiscing elit</td>
+								      <td>$0</td>
+								      <td>$11,000</td>
+								      <td>$11,00</td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="resumen">
+			<div class="container mb-5">
+				<div class="row">
+					<div class="col-lg-4 col-12"></div>
+					<div class="col-lg-4 col-12">
+						<div class="row">
+							<div class="col-lg-6 col-6">
+								<p>Saldo inicial</p>
+							</div>
+							<div class="col-lg-6 col-6">
+								<p>$0</p>
+							</div>
+							<div class="col-lg-12"><hr></div>
+							<div class="col-lg-6 col-6">
+								<p>(+) Cargos</p>
+							</div>
+							<div class="col-lg-6 col-6">
+								<p>$0</p>
+							</div>
+							<div class="col-lg-6 col-6">
+								<p>(-) Abonos</p>
+							</div>
+							<div class="col-lg-6 col-6">
+								<p>$0</p>
+							</div>
+							<div class="col-lg-12"><hr></div>
+							<div class="col-lg-6 col-6">
+								<p>Saldo final</p>
+							</div>
+							<div class="col-lg-6 col-6">
+								<p>$0</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- JS -->
+	<script src="js/jquery/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.easing/jquery.easing.min.js"></script>
+	<script src="js/datepicker/bootstrap-datepicker.js"></script>
+	<script src="js/datepicker/bootstrap-datepicker.es.js"></script>
+	<script src="js/default.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('.datepicker').datepicker({
+        		format: "dd/mm/yyyy",
+        		language: "es",
+        		autoclose: true
+    		});
+		});
+	</script>
+
+</body>
+</html>

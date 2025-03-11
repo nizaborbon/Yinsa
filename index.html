@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>YINSA</title>
+
+	<!-- CSS -->
+	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.css/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+	<link href="css/icofont/icofont.min.css" rel="stylesheet">
+	<link href="css/owl.carousel/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/aos/aos.css" rel="stylesheet">
+	<link href="css/fuentes.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+	<section id="principal">
+		<div class="content">
+			<div class="row">
+				<div id="div-logo" class="col-lg-6 col-md-6 col-12 text-right" data-aos="fade-right">
+					<img class="flex-center img-top" src="img/YINSA_WEB_Logo.png">
+				</div>
+				<div id="div-slogan" class="col-lg-6 col-md-6 col-12 text-right" data-aos="fade-left">
+					<img id="img-slogan" class="flex-center img-top" src="img/YINSA_WEB_Slogan.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-1" data-aos="fade-right">
+					<ul>
+				        <li><a href="#"><img src="img/YINSA_WEB_ICONO_Facebook.png"></a></li>
+				        <li><a href="#"><img src="img/YINSA_WEB_ICONO_Instagram.png"></a></li>
+				        <li><a href="#"><img src="img/YINSA_WEB_ICONO_Linkedin.png"></a></li>
+				        <li><a href="#"><img src="img/YINSA_WEB_ICONO_Spotify.png"></a></li>
+				        <li><a href="#"><img src="img/YINSA_WEB_ICONO_YouTube.png"></a></li>
+				    </ul>
+				</div>
+				<div class="col-lg-5 col-md-6 col-12" data-aos="fade-right">
+					<img id="img-maquina" class="img-center" src="img/YINSA_WEB_Maquina.png">
+				</div>
+				<div class="col-lg-5 col-md-6 col-12" data-aos="fade-left">
+					<img id="img-empaques" class="img-center" src="img/YINSA_WEB_Empaques.png">
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle"><i class="icofont-ui-lock"></i> Aviso de <span>Privacidad</span></h5>
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>-->
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mattis ligula. Maecenas ipsum nulla, lacinia a enim id, semper ultrices nisi. Vivamus vel magna augue. Suspendisse eu urna eu erat consectetur aliquam nec id nibh. Aenean varius a ligula a faucibus. Donec blandit tristique aliquet. In consectetur odio eros. Suspendisse a justo eget urna cursus porttitor in eget ex. Vivamus lobortis blandit volutpat. Cras in bibendum metus. Nunc nec nulla ullamcorper, laoreet tortor id, mattis est. Donec euismod lobortis nisl, sed ultricies sem luctus quis. Nam volutpat id felis a suscipit. Maecenas at cursus erat. Praesent non ligula arcu.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mattis ligula. Maecenas ipsum nulla, lacinia a enim id, semper ultrices nisi. Vivamus vel magna augue. Suspendisse eu urna eu erat consectetur aliquam nec id nibh. Aenean varius a ligula a faucibus. Donec blandit tristique aliquet. In consectetur odio eros. Suspendisse a justo eget urna cursus porttitor in eget ex. Vivamus lobortis blandit volutpat. Cras in bibendum metus. Nunc nec nulla ullamcorper, laoreet tortor id, mattis est. Donec euismod lobortis nisl, sed ultricies sem luctus quis. Nam volutpat id felis a suscipit. Maecenas at cursus erat. Praesent non ligula arcu.</p>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-secondary" href="home.html">ACEPTO TÉRMINOS Y CONDICIONES / ENTRAR</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="js/jquery/jquery.min.js"></script>
+	<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.easing/jquery.easing.min.js"></script>
+	<script src="js/owl.carousel/owl.carousel.min.js"></script>
+	<script src="js/aos/aos.js"></script>
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+		
+		function aos_init() {
+    		AOS.init({
+		      	duration: 1000,
+      			once: true
+    		});
+  		}
+  		$(window).on('load', function() {
+    		aos_init();
+  		});
+
+  		$(document).ready(function() {
+  
+  			setTimeout(function() {
+   
+    		$('#modalAviso').modal('show')
+  			}, 2000);
+		});
+
+	</script>
+
+	
+</body>
+</html>
