@@ -1,0 +1,427 @@
+
+/* ============== GENERAL ============== */ 
+
+a {
+  color: #FFC72C;
+}
+
+a:hover {
+  color: #FFC72C;
+  text-decoration: none;
+}
+
+#main {
+  padding-top: 12vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Suisse Intl Bold", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+	font-family: "Suisse Intl Book", sans-serif;
+}
+
+.content {
+	margin-top: 15vh;
+	margin-bottom: 10vh;
+}
+
+.box {
+  background: rgb(255,255,255, 0.5);
+  padding: 30px;
+}
+
+.box-header {
+	padding-block: 3vh;
+}
+
+.box-body p {
+	text-align: justify;
+}
+
+
+/* ============== HEADER ============== */
+
+#header {
+  background-color: transparent;
+  padding: 30px 0;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  }
+
+#header.header-scrolled {
+  top: 0;
+  padding: 15px;
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-family: "Suisse Intl Book", sans-serif;
+  padding-right: 90px;
+}
+
+#header .container {
+	max-width: 965px !important;
+}
+
+#img-y {
+  display: none;
+  max-height: 30px;
+}
+
+#header .logo a {
+  color: #2D2926;
+}
+
+#header .logo a span {
+  color: #2D2926;
+}
+
+#img-n {
+  max-height: 30px;
+}
+
+.ocultar {
+	display: none !important;
+}
+
+@media (max-width: 992px) {
+  #header {
+    padding: 15px;
+    top: 0;
+  }
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+
+/* ============== NAV MOBILE ============== */
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #222222;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #fff;
+  transition: ease-in-out 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav button {
+  margin-left: 20px;
+  background: transparent;
+  width: 10vh;
+  border: 1px solid;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #222222;
+  padding: 10px 20px;
+  font-weight: 500;
+  outline: none;
+}
+
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+  color: #dd9933;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  content: "\ea99";
+  font-family: IcoFont;
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\eaa1";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(9, 9, 9, 0.6);
+  overflow: hidden;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+
+/* ============== SIDEBAR ============== */
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
+
+.navbar-btn {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none !important;
+  border: none; }
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0; }
+
+.wrapper {
+  /*width: 100%; */
+  overflow: hidden;}
+
+#sidebar {
+  min-width: 300px;
+  max-width: 300px;
+  background: rgb(255,255,255, 0.7);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; 
+  height: 100%;
+  bottom: 0;
+  float: none;
+  left: 0;
+  position: fixed;
+  top: 0;
+  text-transform: uppercase;
+  font-family: "SuisseIntl-SemiBold_0", sans-serif;
+}
+
+#sidebar.active {
+  margin-left: -300px; }
+
+
+#sidebar ul.components {
+  padding: 0; }
+
+#sidebar ul li {
+  font-size: 16px; }
+
+#sidebar ul li > ul {
+  margin-left: 10px; }
+
+#sidebar ul li > ul li {
+  font-size: 14px; }
+
+#sidebar ul li a {
+  padding: 10px 0;
+  color: #2D2926;
+  display: block;
+  color: #2D2926 /*rgba(255, 255, 255, 0.8);*/
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+#sidebar ul li a:hover {
+  color: #FFC72C; 
+  font-family: "Suisse Intl Medium", sans-serif;}
+
+#sidebar ul li.active > a {
+  background: transparent;
+  color: #FFC72C; 
+  font-family: "Suisse Intl Medium", sans-serif;
+}
+
+#div-sidebar {
+  padding-top: 15vh !important;
+}
+
+
+a[data-toggle="collapse"] {
+  position: relative; }
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.btn-sidebar {
+  position: absolute;
+  display: block;
+  bottom: -3px;
+}
+
+.btn-sidebar i {
+  font-size: 1.5rem;
+  display: block;
+}
+
+#sidebar-btn {
+  text-transform: uppercase;
+  background: transparent;
+}
+
+#sidebar-btn:hover {
+  color: #fff;
+  background: #FFC72C;
+  border-color: transparent;
+}
+
+.nav-menu .dropdown {
+  font-family: "Suisse Intl Medium", sans-serif;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-top: 8px;
+  width: 7rem;
+}
+
+.dropdown-menu {
+  line-height: 2rem;
+  padding: 0;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #adaeb0;
+}
+
+#btn-toggle {
+  background-color: transparent !important;
+  border: 2px solid #2D2926;
+  border-radius: 0;
+  color: #2D2926 !important;
+}
+
+.dropdown-toggle::after {
+ border-top: 0;
+ border-right: 0;
+}
+
+/* ============== ENCABEZADO ============== */
+
+#encabezado {
+  width: 100%;
+  height: auto;
+  background-image: url(../img/YINSA_WEB_SLIDESHOW3.png);
+  overflow: hidden;
+  padding: 0;
+ /* margin-bottom: -120px;
+  position: static;*/
+}
+
+#encabezado h2 {
+	text-transform: uppercase;
+}
+
+/* ============== PRODUCTO ============== */
+
+#producto {
+  	height: auto;
+ 	padding: 10vh 0;
+  	overflow: hidden;
+}
+
+.producto-img {
+	width: 100%;
+}
+
+#producto .btn {
+	border: 2px solid;
+    border-radius: 1rem;
+}
+
+/* ============== OTRAS LINEAS ============== */
+
+#lineas {
+  	height: auto;
+ 	padding: 10vh 0;
+  	overflow: hidden;
+}
+
+#lineas h2 {
+	text-align: center;
+}
+	

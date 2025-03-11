@@ -1,0 +1,145 @@
+
+/* ============== FONDO ============== */
+
+body {
+background: url('../img/YINSA_WEB_INICIO_Fondo.png');
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+.content {
+margin-right: 20vh;
+margin-left: 20vh;
+margin-top: 10vh;
+margin-bottom: 10vh;
+}
+
+.img-center {
+width: 90vh;
+}
+
+#img-maquina {
+margin-left: 5vh;
+z-index: 1;
+position: absolute;
+}
+
+@media (max-width: 767px) {
+
+img {
+	width: 5vh;
+}
+
+.content  {
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+}
+
+.img-top {
+	 width: 30vh;
+}
+
+#img-slogan {
+	display: none;
+}
+
+#img-empaques {
+	display: none;
+}
+
+#img-maquina {
+	position: relative;
+	margin-left: 0;
+}
+
+.img-center {
+	width: 55vh;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.content {
+	margin-left: 5vh;
+	margin-right: 5vh;
+}
+
+.img-top {
+	width: 30vh;
+}
+
+#img-maquina {
+	position: relative;
+	margin-left: 0;
+}
+
+.img-center {
+	width: 55vh;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+
+.content {
+	margin-left: 3vh;
+	margin-right: 3vh;
+}
+}
+
+/* ============== MODAL ============== */
+
+.modal-content {
+border-radius: 0;
+background: rgb(255,255,255,0.7);
+}
+
+.modal-header {
+background: rgb(255,255,255,0.7);
+text-align: center;
+display: block;
+}
+
+.modal-title {
+font-family: "Suisse Intl Medium", sans-serif;
+}
+
+.modal-title i {
+font-size: 5vh
+}
+
+.modal-title span {
+font-family: "Suisse Intl Bold", sans-serif;
+}
+
+.modal-dialog {
+max-width: 50%;
+}
+
+.modal-body {
+font-family: "Suisse Intl Book", sans-serif;
+}
+
+.modal-footer {
+justify-content: center;
+}
+
+.modal-footer a {
+border-radius: 20px;
+font-family: "Suisse Intl Book", sans-serif;
+}
